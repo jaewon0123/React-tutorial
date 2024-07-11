@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+/*
+useEffect(() => {
+  //TicTacToe.js가 실행되면 특정 기능 시작!
+}, [])
+*/
 const 배열랜덤섞기 = (배열) => {
   //sort = 가지런히 정렬하다 할 때 정렬   랜덤으로 나온 값을 정렬
   // Math.random() - 0.5 : 배열을 랜덤으로 섞을 때 자주 사용 -0.5 ~ 0.5 사이 생성
@@ -28,6 +32,19 @@ const TicTapToe = () => {
   // 게임 상태에 따라 사용한테 보여줄 메세지를 표현
   const [message, setMessage] = useState(""); //처음에는 할 말이 없기 때문에 빈공간
 
+  const [timer, setTimer] = useState(5);
+
+  useEffect (() => {
+    let countdown;
+    if (timer > 0) {
+      
+      countdown = setTimeout(() => {
+        setTimer(timer - 1)
+      }, 500);
+    } else if (timer === 0) {
+      alert("시간초과 되었습니다. 다시시작해주세요!")
+    }
+  }, [])
   const 숫자클릭하기 = (number) => {
     //만약에 현재 사용자가 클릭해야하는 숫자와 사용자가 클릭한 숫자가 서로 일치하는가 ?
     if (number === nextNumber) {
@@ -52,10 +69,12 @@ const TicTapToe = () => {
     // 메세지 세팅
     setMessage('');
     //setIsCorrect(false);
+    setTimer(5);
   }
   return (
     <div className="tictaptoe-container">
       <h1>틱탭토</h1>
+      <div className="timer">남은시간 : {timer}초</div>
       <div className="tictaptoe-grid">
         {numbers.map((number) => (
           <button className="tictaptoe-button" key={number} onClick={() => 숫자클릭하기(number)}>
