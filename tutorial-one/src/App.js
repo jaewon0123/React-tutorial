@@ -30,6 +30,14 @@ import 컨텍스트1 from './component/R12_Context1.js';
 import 컨텍스트2 from './component/R13_Context2.js';
 import 부트스트랩1 from './component/R14_Bootstrap.js';
 import 컨텍스트3 from './component/R15_Context3/Parent.js';
+import Ref예제1 from './component/R19_useRef.js';
+import Ref예제2 from './component/R20_useRefInput.js';
+import Ref예제3 from './component/R21_useRefSignUp.js';
+//R22_useRefEx -> {RefEx as Ref예제4}
+//import {RefEx as Ref예제4} from './component/R22_useRefEx.js';
+import {RefEx as Ref예제4} from './component/R22_useRefEx.js';
+import Dodgegobelin from './component/R23_Dodgegobelin/Dodgegobelin.js';
+import Axios예제1번 from './component/R25_Axios_Ex1.js';
 function App() {
   return (
     /*
@@ -67,7 +75,13 @@ function App() {
         {/*<컨텍스트1/>*/}
         {/*<컨텍스트2/>*/}
         {/*<부트스트랩1/>*/}
-        <컨텍스트3/>
+        {/*<컨텍스트3/>*/}
+        {/*<Ref예제1/>*/}
+        {/*<Ref예제2/>*/}
+        {/*<Ref예제3/>*/}
+        {/*<Ref예제4/>*/}
+        {/*<Dodgegobelin/>*/}
+        <Axios예제1번/>
     </div>
   );
 }
