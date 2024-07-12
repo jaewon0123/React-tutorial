@@ -6,6 +6,7 @@ const Axios_Ex1 = () => {
     const [data, setData] = useState(null);
 
     const 불러오기버튼 = () => {
+        //axios.get("https://스프링부트:8080/상세보기/3")
         axios.get("https://jsonplaceholder.typicode.com/todos")
         //무사히 잘 가져왔다면 then으로 data 값 변경
         .then(res => {
