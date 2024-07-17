@@ -13,6 +13,8 @@ const Login = () => {
 
   //로그인버튼 함수 만들기
   const 로그인버튼 = () => {
+    
+
     fetch('/login', {
         method: 'POST',
 
@@ -41,8 +43,19 @@ const Login = () => {
         //id pw 값 모두 지우기ㅣ
         setId('');
         setPw('');
+        alert('로그인 성공~!')
+        console.log('로그인 멤버 : ' + id)
     })
   }
+
+    /* 로그아웃 이벤트 핸들러 */
+    const 로그아웃버튼 = () => {
+      setId('');
+      setPw('');
+      setLoginMember(null);
+      console.log('로그인 멤버 : ' + id)
+    }
+
   return (
     <div className="login-container">
       <table>
@@ -72,6 +85,10 @@ const Login = () => {
           </tr>
         </tbody>
       </table>
+      {/* loginMember 가 null이 아닌 경우 로그아웃 버튼 보이게 하기 */}
+      {loginMember && (
+        <button onClick={로그아웃버튼}>로그아웃</button>
+      )}
     </div>
   );
 };
