@@ -19,7 +19,7 @@ const 배열랜덤섞기 = (배열) => {
   return 배열.sort(() => Math.random() - 0.5);
 };
 
-const TicTapToe = () => {
+const TicTacToe = () => {
   // numbers 1부터 9까지 숫자가 섞인 배열
   // ...Array(9) 숫자가 담길 그릇을 9개 만듬 숫자가 담길 그릇이 9개
   // .keys() 숫자를 가지고옴
@@ -99,4 +99,4 @@ const TicTapToe = () => {
   );
 };
 
-export default TicTapToe;
+export default TicTacToe;

@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./component/Header.js";
 import NavBar from "./component/NavBar.js";
 import Main from "./component/Main.js";
-import TicTapToe from '../../my-simple-website/src/component/TicTacToe.js';
+
 
 function App() {
   return (

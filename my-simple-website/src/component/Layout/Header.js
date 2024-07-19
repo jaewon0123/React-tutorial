@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>My simple Website</h1>
+        <h1>REACT로 포트폴리오 만들기</h1>
       </header>
     </div>
   );

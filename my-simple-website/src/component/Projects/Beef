@@ -1,0 +1,12 @@
+const Beef = () => {
+
+    return (
+        <div>
+            <header>
+            <h1>소고기 판매 사이트</h1>
+            <p>최고급 한우 판매사이트 입니다.</p>
+            </header>
+            <
+        </div>
+    )
+}

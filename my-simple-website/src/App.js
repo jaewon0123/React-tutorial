@@ -8,7 +8,7 @@ import NavBar from "./component/Layout/NavBar" // Can't resolve './component/Nav
 // in 'C:\Users\user1\react-workspace\my-simple-website\src'
 import GameTwoStep from "./component/GameTwoStep";
 import TodoList from "./component/TodoList";
-import TicTapToe from "./component/TicTacToe/TicTacToe";
+import TicTacToe from "./component/TicTacToe/TicTacToe";
 import TicTacToe2 from "./component/TicTacToe/TicTacToe2";
 import TypingTest from "./component/TypingTest";
 import MovieRating from "./component/Movie/MovieGrade";
@@ -25,7 +25,7 @@ function App() {
         <Route path="/game" element={<Game/>}/>
         <Route path="/game-twoStep" element={<GameTwoStep/>}/>
         <Route path="/todoList" element={<TodoList/>}/>
-        <Route path='/tictaptoe' element={<TicTapToe/>}/>
+        <Route path='/tictaptoe' element={<TicTacToe/>}/>
         <Route path="/ttt-twoStep" element={<TicTacToe2/>}/>
         <Route path="/typingTest" element={<TypingTest/>}/>
         <Route path="/movieRate" element={<MovieRating/>}/>
