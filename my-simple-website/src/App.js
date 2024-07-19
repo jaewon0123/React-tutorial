@@ -12,7 +12,8 @@ import TicTapToe from "./component/TicTacToe/TicTacToe";
 import TicTacToe2 from "./component/TicTacToe/TicTacToe2";
 import TypingTest from "./component/TypingTest";
 import MovieRating from "./component/Movie/MovieGrade";
-import './component/TicTacToe.css';
+import './css/TicTacToe.css';
+import Footer from "./component/Layout/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/typingTest" element={<TypingTest/>}/>
         <Route path="/movieRate" element={<MovieRating/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }

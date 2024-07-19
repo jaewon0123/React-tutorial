@@ -1,7 +1,7 @@
 //영화 평점 사이트 = Movie Grade Site, Movie Rating Site
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import './MovieGrade.css';
+import '../../css/MovieGrade.css';
 //추후 css 추가할 예정
 
 const MovieRating = () => {

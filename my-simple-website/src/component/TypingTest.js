@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Result from "./Result";
 import { Link } from "react-router-dom";
-import "./TypingTest.css";
+import "../css/TypingTest.css";
 
 //문제는 타자대회 컴포넌트 바깥으로 옮겨 별개로 사용
 const 타이핑문제 = ["도토리는 맛있다.",// 1단계 문제 0번 문제
