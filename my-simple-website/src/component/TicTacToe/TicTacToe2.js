@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import "../TicTacToe.css";
 
 const 숫자섞기 = (숫자) => {
 
